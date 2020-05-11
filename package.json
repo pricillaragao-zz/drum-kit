@@ -1,0 +1,24 @@
+{
+  "name": "javascript30-drum-kit",
+  "version": "1.0.0",
+  "description": "Drum Kit project from the [30 day Vanilla JS Coding Challenge](https://javascript30.com/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinguinzinhos/javascript30-drum-kit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pinguinzinhos/javascript30-drum-kit/issues"
+  },
+  "homepage": "https://github.com/pinguinzinhos/javascript30-drum-kit#readme",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}
