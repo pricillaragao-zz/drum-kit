@@ -1,71 +1,101 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Pricilla's Drum Kit</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Nostalgia inducing drum kit designed to take you back to good times with friends in the classic rock pubs of the urban metropolis.">
+    <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <script src="drum.js"></script>
     <div class="keys">
-      
       <div data-key="65" class="key">
         <kbd>A</kbd>
-        <span style="color:lightcoral" class="sound">Clap</span>
+        <span class="sound coral">Clap</span>
       </div>
 
       <div data-key="83" class="key">
         <kbd>S</kbd>
-        <span style="color: aqua" class="sound">Hi-hat</span>
+        <span class="sound aqua">Hi-hat</span>
       </div>
 
       <div data-key="68" class="key">
         <kbd>D</kbd>
-        <span style="color:lightcoral" class="sound">Kick</span>
+        <span class="sound coral">Kick</span>
       </div>
 
       <div data-key="70" class="key">
         <kbd>F</kbd>
-        <span style="color: aqua" class="sound">Openhat</span>
+        <span class="sound aqua">Openhat</span>
       </div>
 
       <div data-key="71" class="key">
         <kbd>G</kbd>
-        <span style="color:lightcoral" class="sound">Boom</span>
+        <span class="sound coral">Boom</span>
       </div>
 
       <div data-key="72" class="key">
         <kbd>H</kbd>
-        <span style="color: aqua" class="sound">Ride</span>
+        <span class="sound aqua">Ride</span>
       </div>
 
       <div data-key="74" class="key">
         <kbd>J</kbd>
-        <span style="color:lightcoral" class="sound">Snare</span>
+        <span class="sound coral">Snare</span>
       </div>
 
       <div data-key="75" class="key">
         <kbd>K</kbd>
-        <span style="color: aqua" class="sound">Tom</span>
+        <span class="sound aqua">Tom</span>
       </div>
 
       <div data-key="76" class="key">
         <kbd>L</kbd>
-        <span style="color:lightcoral" class="sound">Tink</span>
+        <span class="sound coral">Tink</span>
       </div>
 
-      <audio data-key="65" src="http://henriquemelanda.com.br/assests/sounds/clap.wav"></audio>
-      <audio data-key="83" src="http://henriquemelanda.com.br/assests/sounds/hihat.wav"></audio>
-      <audio data-key="68" src="http://henriquemelanda.com.br/assests/sounds/kick.wav"></audio>
-      <audio data-key="70" src="http://henriquemelanda.com.br/assests/sounds/openhat.wav"></audio>
-      <audio data-key="71" src="http://henriquemelanda.com.br/assests/sounds/boom.wav"></audio>
-      <audio data-key="72" src="http://henriquemelanda.com.br/assests/sounds/ride.wav"></audio>
-      <audio data-key="74" src="http://henriquemelanda.com.br/assests/sounds/snare.wav"></audio>
-      <audio data-key="75" src="http://henriquemelanda.com.br/assests/sounds/tom.wav"></audio>
-      <audio data-key="76" src="http://henriquemelanda.com.br/assests/sounds/tink.wav"></audio>
-
-      </div>
+      <audio
+        data-key="65"
+        src="http://henriquemelanda.com.br/assests/sounds/clap.wav"
+      ></audio>
+      <audio
+        data-key="83"
+        src="http://henriquemelanda.com.br/assests/sounds/hihat.wav"
+      ></audio>
+      <audio
+        data-key="68"
+        src="http://henriquemelanda.com.br/assests/sounds/kick.wav"
+      ></audio>
+      <audio
+        data-key="70"
+        src="http://henriquemelanda.com.br/assests/sounds/openhat.wav"
+      ></audio>
+      <audio
+        data-key="71"
+        src="http://henriquemelanda.com.br/assests/sounds/boom.wav"
+      ></audio>
+      <audio
+        data-key="72"
+        src="http://henriquemelanda.com.br/assests/sounds/ride.wav"
+      ></audio>
+      <audio
+        data-key="74"
+        src="http://henriquemelanda.com.br/assests/sounds/snare.wav"
+      ></audio>
+      <audio
+        data-key="75"
+        src="http://henriquemelanda.com.br/assests/sounds/tom.wav"
+      ></audio>
+      <audio
+        data-key="76"
+        src="http://henriquemelanda.com.br/assests/sounds/tink.wav"
+      ></audio>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>

@@ -20,8 +20,20 @@
   },
   "homepage": "https://github.com/pinguinzinhos/javascript30-drum-kit#readme",
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
     "serve": "^11.3.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{html,css,js,md,json}": [
+      "prettier --write"
+    ]
+  }
 }
