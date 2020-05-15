@@ -1,5 +1,4 @@
-html {
-  font-size: 15px;
+body {
   font-family: "Bungee Outline", cursive;
   background: url(https://images.unsplash.com/photo-1461784121038-f088ca1e7714?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
 }
@@ -9,24 +8,12 @@ kbd {
   font-size: 4rem;
 }
 
-.keys {
-  display: flex;
-  flex: 1;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: center;
+.aqua {
+  color: aqua;
 }
 
-.key {
-  border: 0.1rem solid lightcoral;
-  border-radius: 0.4rem;
-  padding: 1rem;
-  width: 5rem;
-  text-align: center;
-  color: azure;
-  background: rgba(0, 0, 0, 0.4);
-  text-shadow: 0 0 0.5rem white;
-  transition: all 0.07s;
+.coral {
+  color: lightcoral;
 }
 
 .playing {
@@ -35,10 +22,33 @@ kbd {
   box-shadow: 0 0 20rem red;
 }
 
-.aqua {
-  color: aqua;
+.key {
+  border: 0.1rem solid lightcoral;
+  text-align: center;
+  color: azure;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 0.5rem white;
+  transition: all 0.07s;
 }
 
-.coral {
-  color: lightcoral;
+@media (min-width: 640px) {
+  .sm\:keys {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sm\:key {
+    border-radius: 0.4rem;
+    padding: 0.65rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:key {
+    padding: 1rem;
+    width: 5rem;
+  }
 }
