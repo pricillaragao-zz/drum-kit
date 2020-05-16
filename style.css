@@ -1,38 +1,32 @@
-html {
-  font-size: 15px;
+body {
   font-family: "Bungee Outline", cursive;
   background: url(https://images.unsplash.com/photo-1461784121038-f088ca1e7714?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
 }
 
 kbd {
   display: block;
-  font-size: 4rem;
+  font-size: 3.1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-template {
+  grid-template: ". keys ." / 1fr 1fr 1fr;
 }
 
 .keys {
-  display: flex;
-  flex: 1;
-  min-height: 80vh;
-  align-items: center;
-  justify-content: center;
+  grid-area: keys;
 }
 
 .key {
   border: 0.1rem solid lightcoral;
-  border-radius: 0.4rem;
-  padding: 1rem;
-  width: 5rem;
   text-align: center;
   color: azure;
   background: rgba(0, 0, 0, 0.4);
   text-shadow: 0 0 0.5rem white;
   transition: all 0.07s;
-}
-
-.playing {
-  transform: scale(0.9);
-  border-color: red;
-  box-shadow: 0 0 20rem red;
 }
 
 .aqua {
@@ -41,4 +35,35 @@ kbd {
 
 .coral {
   color: lightcoral;
+}
+
+.playing {
+  transform: scale(0.9);
+  border-color: red;
+  box-shadow: 0 0 20rem red;
+}
+
+@media (min-width: 30em) {
+  kbd {
+    font-size: 4rem;
+  }
+
+  .sm\:keys {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    width: max-content;
+  }
+
+  .sm\:key {
+    border-radius: 0.4rem;
+    padding: 0.6em;
+  }
+}
+
+@media (min-width: 60em) {
+  .md\:key {
+    padding: 1rem;
+    width: 5rem;
+  }
 }
